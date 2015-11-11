@@ -1,0 +1,25 @@
+#sidebar {
+
+    background: #ddd;
+
+    .topbar, .topbar span {
+        background: #ddd;
+    }
+
+    #sidebaradvanced {
+
+        .arrowbox {
+           margin-top: 10px;
+           padding-top: 12px;
+        }
+
+         ul ul {
+
+             margin-top: 14px;
+             
+             li {
+                 margin-top: 8px;
+             }
+         }
+    }
+}

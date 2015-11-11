@@ -1,0 +1,27 @@
+#home {
+
+    #mastheadcontainer {
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 99;
+   }
+
+   #masthead {
+       background: transparent;
+   }
+
+   .menuwrapper {
+       display: none;
+   }
+
+   .mastheadright {
+
+       li a {
+           color: white !important;
+           text-transform: uppercase;
+       }
+
+   }
+
+}

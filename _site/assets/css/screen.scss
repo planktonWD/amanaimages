@@ -1,0 +1,26 @@
+
+
+@import "ui/tools/mixins";
+
+@import "ui/components/homepage";
+@import "ui/components/footer";
+@import "ui/components/header";
+@import "ui/components/advanced-search-sidebar";
+
+@import "ui/components/slideshow";
+@import "ui/components/search-box";
+
+/*
+    Infradox Team
+*/
+
+#home .centeredcontent {
+    height:initial !important;
+    min-height:600px;
+}
+#masthead .mastheadleft {
+    overflow: visible;
+}
+#activelocale, li.locale {
+    display:none
+}

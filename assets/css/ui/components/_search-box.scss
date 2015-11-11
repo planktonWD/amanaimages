@@ -1,0 +1,35 @@
+#home .centersearch {
+    top: 233px !important;
+
+    #moveablesearch {
+        position:relative;
+        top: initial;
+        left: initial;
+    }
+
+}
+
+.centersearch {
+
+    .fsearchtable {
+        td {
+            &.inputcontainer, &.searchcontainer, &.optionscontainer {
+                background: rgba(255,255,255,0.8);
+            }
+        }
+
+        tbody tr {
+            border: solid 1px #555;
+        }
+    }
+
+    #searchelements {
+        border: solid 1px rgba(255,255,255,0.8);
+    }
+}
+
+#moveablesearch {
+    position:absolute;
+    top: 68px;
+    left: -9px;
+}

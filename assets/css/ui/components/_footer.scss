@@ -1,0 +1,16 @@
+// this this the social social footer images
+#page-footer .sitemap ul.community-icons li {
+
+    @include vendor(background-size, 16px);
+
+    &.icon-facebook {
+        background-image: url(/siteowner/artwork/artwork/facebook.png);
+        background-position: 0 0;
+    }
+
+    &.icon-linkedin {
+        background-image: url(/siteowner/artwork/artwork/linkedIn.png);
+        background-position: 0 0;
+    }
+
+}
