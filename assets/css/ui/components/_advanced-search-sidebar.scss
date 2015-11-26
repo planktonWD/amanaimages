@@ -1,6 +1,21 @@
 #sidebar {
 
+    padding-left: 22px;
+    
     background: #ddd;
+    
+    .advsrchlabel {
+		line-height: 1.8;
+	}
+    
+    // this is the title at the very top of the advanced search sidebar
+    .opened {
+    	padding-left: 4px;
+    }
+    
+    &.sidebaropen {
+    	margin-top: 1px;
+    }
 
     .topbar, .topbar span {
         background: #ddd;
@@ -8,18 +23,53 @@
 
     #sidebaradvanced {
 
+		margin-top: 0;
+		
         .arrowbox {
            margin-top: 10px;
            padding-top: 12px;
         }
-
-         ul ul {
+        
+        ul {
+        	margin-left: 0;
+        	
+        	ul {
 
              margin-top: 14px;
-             
+
              li {
                  margin-top: 8px;
              }
-         }
-    }
+            
+            }
+
+        }
+        
+        .fbtns {
+			margin-top: 0;
+			
+			li {
+				margin-top: 0;
+			}
+		} 
+    }  
 }
+
+#sidebar.sidebarclosed {
+	padding-left: 0;
+	
+	.topbar.buttonbar.closed {
+		margin-right: 6px;
+	}
+}
+
+.advsearchhiding {
+	background: url('http://www.amanaimages.com.au//siteowner/artwork/portraits/filters.png');
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+#sidebaradvanced #recentsearcheslist li { margin-left: 0;}
+
+.lifiltersearchagain {display: none !important;}

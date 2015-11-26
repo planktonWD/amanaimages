@@ -4,13 +4,54 @@
     @include vendor(background-size, 16px);
 
     &.icon-facebook {
-        background-image: url(/siteowner/artwork/artwork/facebook.png);
+        background-image: url('http://www.amanaimages.com.au//siteowner/artwork/artwork/facebook.png');
         background-position: 0 0;
     }
 
     &.icon-linkedin {
-        background-image: url(/siteowner/artwork/artwork/linkedIn.png);
+        background-image: url('http://www.amanaimages.com.au//siteowner/artwork/artwork/linkedIn.png');
         background-position: 0 0;
     }
 
 }
+
+.poweredbox {
+	display: none;
+}
+
+.customfooter {
+
+	.column {
+		width: 20% !important;
+		margin-left: 0 !important;
+		box-sizing: border-box;
+		padding-left: 25px !important;
+		 
+	}
+
+}
+
+.footer-tagline {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 40px;
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	line-height: 24px;
+	
+	b {
+		font-size: 17px;
+	}
+}
+
+.footercontainer {
+	overflow: hidden;
+	
+	img {
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+#page-footer .sitemap ul.categories {height: auto;}

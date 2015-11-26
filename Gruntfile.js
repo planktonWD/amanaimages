@@ -118,7 +118,7 @@ module.exports = function (grunt) {
                 //'svgstore',
                 //'uglify',
                 'watch',
-                //'shell:jekyllServe'
+                'shell:jekyllServe'
             ],
             options: {
                 logConcurrentOutput: true

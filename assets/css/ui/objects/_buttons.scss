@@ -1,8 +1,8 @@
 // Button Borders
-$btn-radius: $radius;
-$btn-border-width: 2px;
+$btn-radius: 3px;
+$btn-border-width: 0;
 $btn-border-style: solid;
-$btn-border-color: $highlight;
+$btn-border-color: transparent;
 
 // Button Padding
 $btn-padding: 8px;
@@ -12,14 +12,14 @@ $btn-horizontal-padding: double($btn-padding) - $btn-border-width;
 @mixin button {
 	display: inline-block; /* [1] */
     vertical-align: middle; /* [2] */
-    font-weight: $heavy;
     text-align: center; /* [4] */
     border: none; /* [4] */
     margin:  0; /* [4] */
     cursor: pointer; /* [5] */
     overflow: visible; /* [6] */
     padding: $btn-vertical-padding $btn-horizontal-padding !important; /* [7] */
-    background-color: transparent;
+    background-color: #ccc;
+    line-height: 1.5;
 
     @if($btn-border-width != 0) {
         border: $btn-border-width $btn-border-style $btn-border-color;
@@ -29,120 +29,36 @@ $btn-horizontal-padding: double($btn-padding) - $btn-border-width;
         border-radius: $btn-radius;
     }
 
-
+	text-decoration: none !important;
 	margin-bottom: $spacing-unit !important;
 	@include vendor(transition, 0.3s);
-	@include font-size(17px);
-	color: $highlight;
+	@include vendor(box-sizing, border-box);
 	position: relative;
-	margin-right: $spacing-unit/2;
-	max-width: 330px;
+	
 
-	@include attention {
-		text-decoration: none;
-		background-color: $highlight;
-		border-color: $highlight;
-		color: white;
-	}
 }
 
 .button {
-	@include button;
+	@include button;	
+}
 
-	&.button--svg {
-		padding-right: 24px !important;
-	}
+#sidebar {
 
-	svg {
-		width: 6px;
-	    height: 16px;
-	    fill: transparent;
-	    position: absolute;
-	    top: 0.6em;
-	    right: 8px;
-	    stroke: $highlight;
-	    stroke-width: 2px;
-	    stroke-linecap: round;
-	}
-
-	@include attention {
-		svg {
-			stroke: white;
-
-		}
+	#fbtn_apply, #fbtn_reset, .searchwithfilters  {
+		@include button;
 	}
 }
 
-	/* color modifiers */
+// no margin bottom buttons
 
-	.button--white {
-		@include button;
-		background-color: transparent !important;
-		border-color: white !important;
-		color: white;
+#sidebar {
 
-		@include attention {
-			background-color: white !important;
-			border-color: white !important;
-			color: $highlight;
-		}
-
-		&.button--svg {
-			padding-right: 24px !important;
-		}
-
-		svg {
-			width: 6px;
-		    height: 16px;
-		    fill: transparent;
-		    position: absolute;
-		    top: 0.6em;
-		    right: 8px;
-		    stroke: white;
-		    stroke-width: 2px;
-		    stroke-linecap: round;
-		}
-
-		@include attention {
-			svg {
-				stroke: $highlight;
-
-			}
-		}
+	#fbtn_apply, #fbtn_reset, .searchwithfilters  {
+		margin-bottom: 10px !important;
 	}
+}
 
-	.button--full {
-		@include button;
-		background-color: $highlight !important;
-		border-color: $highlight !important;
-		color: white;
+// not quite full width buttons
 
-		@include attention {
-			background-color: white !important;
-			border-color: white !important;
-			color: $highlight;
-		}
 
-		&.button--svg {
-			padding-right: 24px !important;
-		}
-
-		svg {
-			width: 6px;
-		    height: 16px;
-		    fill: transparent;
-		    position: absolute;
-		    top: 0.6em;
-		    right: 8px;
-		    stroke: white;
-		    stroke-width: 2px;
-		    stroke-linecap: round;
-		}
-
-		@include attention {
-			svg {
-				stroke: $highlight;
-
-			}
-		}
-	}
+	

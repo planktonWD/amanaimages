@@ -1,3 +1,70 @@
+.button {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  text-align: center;
+  /* [4] */
+  border: none;
+  /* [4] */
+  margin: 0;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  overflow: visible;
+  /* [6] */
+  padding: 8px 16px !important;
+  /* [7] */
+  background-color: #ccc;
+  line-height: 1.5;
+  border-radius: 3px;
+  text-decoration: none !important;
+  margin-bottom: 22px !important;
+  -ms-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative; }
+
+#sidebar #fbtn_apply, #sidebar #fbtn_reset, #sidebar .searchwithfilters {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  text-align: center;
+  /* [4] */
+  border: none;
+  /* [4] */
+  margin: 0;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  overflow: visible;
+  /* [6] */
+  padding: 8px 16px !important;
+  /* [7] */
+  background-color: #ccc;
+  line-height: 1.5;
+  border-radius: 3px;
+  text-decoration: none !important;
+  margin-bottom: 22px !important;
+  -ms-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative; }
+
+#sidebar #fbtn_apply, #sidebar #fbtn_reset, #sidebar .searchwithfilters {
+  margin-bottom: 10px !important; }
+
 #home #mastheadcontainer {
   position: absolute;
   top: 0;
@@ -12,7 +79,8 @@
 
 #home .mastheadright li a {
   color: white !important;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 13px; }
 
 #page-footer .sitemap ul.community-icons li {
   -ms-background-size: 16px;
@@ -20,26 +88,91 @@
   -moz-background-size: 16px;
   background-size: 16px; }
   #page-footer .sitemap ul.community-icons li.icon-facebook {
-    background-image: url(/siteowner/artwork/artwork/facebook.png);
+    background-image: url("http://www.amanaimages.com.au//siteowner/artwork/artwork/facebook.png");
     background-position: 0 0; }
   #page-footer .sitemap ul.community-icons li.icon-linkedin {
-    background-image: url(/siteowner/artwork/artwork/linkedIn.png);
+    background-image: url("http://www.amanaimages.com.au//siteowner/artwork/artwork/linkedIn.png");
     background-position: 0 0; }
+
+.poweredbox {
+  display: none; }
+
+.customfooter .column {
+  width: 20% !important;
+  margin-left: 0 !important;
+  box-sizing: border-box;
+  padding-left: 25px !important; }
+
+.footer-tagline {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 40px;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  line-height: 24px; }
+  .footer-tagline b {
+    font-size: 17px; }
+
+.footercontainer {
+  overflow: hidden; }
+  .footercontainer img {
+    max-width: 100%;
+    margin-bottom: 20px; }
+
+#page-footer .sitemap ul.categories {
+  height: auto; }
 
 #masthead {
   height: 124px; }
 
+#masthead .mastheadleft {
+  margin-left: 21px;
+  margin-top: 7px; }
+
 #sidebar {
+  padding-left: 22px;
   background: #ddd; }
+  #sidebar .advsrchlabel {
+    line-height: 1.8; }
+  #sidebar .opened {
+    padding-left: 4px; }
+  #sidebar.sidebaropen {
+    margin-top: 1px; }
   #sidebar .topbar, #sidebar .topbar span {
     background: #ddd; }
-  #sidebar #sidebaradvanced .arrowbox {
-    margin-top: 10px;
-    padding-top: 12px; }
-  #sidebar #sidebaradvanced ul ul {
-    margin-top: 14px; }
-    #sidebar #sidebaradvanced ul ul li {
-      margin-top: 8px; }
+  #sidebar #sidebaradvanced {
+    margin-top: 0; }
+    #sidebar #sidebaradvanced .arrowbox {
+      margin-top: 10px;
+      padding-top: 12px; }
+    #sidebar #sidebaradvanced ul {
+      margin-left: 0; }
+      #sidebar #sidebaradvanced ul ul {
+        margin-top: 14px; }
+        #sidebar #sidebaradvanced ul ul li {
+          margin-top: 8px; }
+    #sidebar #sidebaradvanced .fbtns {
+      margin-top: 0; }
+      #sidebar #sidebaradvanced .fbtns li {
+        margin-top: 0; }
+
+#sidebar.sidebarclosed {
+  padding-left: 0; }
+  #sidebar.sidebarclosed .topbar.buttonbar.closed {
+    margin-right: 6px; }
+
+.advsearchhiding {
+  background: url("http://www.amanaimages.com.au//siteowner/artwork/portraits/filters.png");
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: top right; }
+
+#sidebaradvanced #recentsearcheslist li {
+  margin-left: 0; }
+
+.lifiltersearchagain {
+  display: none !important; }
 
 @media (min-width: 1200px) {
   #home #pagewrapper .mc-image, #home #pagewrapper {
@@ -109,7 +242,42 @@
 #moveablesearch {
   position: absolute;
   top: 68px;
-  left: -9px; }
+  left: 12px; }
+
+#searchwithincontainer {
+  float: left;
+  margin-top: 11px; }
+
+.panelbackground {
+  background: transparent; }
+
+#contentcolumn {
+  margin-left: 222px; }
+
+.nosidebar {
+  margin-left: 25px !important; }
+
+ul.navbarsection1 {
+  margin-left: 5px; }
+
+#preview #contentwrapper, #cart #contentwrapper {
+  padding-left: 13px;
+  box-sizing: border-box; }
+
+#mainMenuContainer ul {
+  padding: 0; }
+
+#mainMenuContainer #left {
+  margin-left: 16px !important; }
+
+.menuwrapper {
+  height: 36px; }
+
+.dropdownmenu {
+  margin-top: 2px; }
+
+#preview .newkeywordsbox {
+  background: #F2F2F2; }
 
 /*
     Infradox Team
